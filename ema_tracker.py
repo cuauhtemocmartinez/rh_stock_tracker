@@ -12,16 +12,16 @@ def calculate_ema(prices, days, smoothing=2):
     return ema
 
 
-symbol = 'MSFT'
-df = web.DataReader(symbol, 'yahoo', '2015-01-01', '2016-01-01')
+symbol = 'PFE'
+df = web.DataReader(symbol, 'yahoo', '2021-04-10', '2021-05-10')
 
 # Add this line to save EMA values in a list
-ema = calculate_ema(df['Close'], 10)
+ema = calculate_ema(df['Close'], 5)
 
 # Creates array [0, 1, 2, 3, ..., df.shape[0]]
 price_X = np.arange(df.shape[0])
 # Creates array [10, 11, 12, 13, ..., df.shape[0]+1]
-ema_X = np.arange(10, df.shape[0]+1)
+ema_X = np.arange(5, df.shape[0]+1)
 # We start at 10, because we use the first 10 values to calculate the SMA,
 # then we calculate EMA form the 11th value
 

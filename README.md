@@ -1,1 +1,1 @@
-# selling_stock
+# ema_stock_tracker

@@ -20,3 +20,7 @@ def get_stocks():
     stocks.append('JG')
     return(stocks)
 
+def open_market():
+    market = False
+    time_now = dt.datetime.now().time()
+

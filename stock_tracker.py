@@ -33,3 +33,5 @@ def open_market():
         print('### market is closed')
 
     return(market)
+
+open_market()

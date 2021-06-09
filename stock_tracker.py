@@ -24,3 +24,12 @@ def open_market():
     market = False
     time_now = dt.datetime.now().time()
 
+    market_open = dt.time(6,30,0) #6:30AM
+    market_close = dt.time(12,59,0) #12:59PM
+
+    if time_now > market_open and time_now < market_close:
+        market = True
+    else:
+        print('### market is closed')
+
+    return(market)

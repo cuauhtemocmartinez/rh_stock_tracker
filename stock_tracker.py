@@ -13,4 +13,5 @@ def login(days):
                             store_session=True)
 
 def logout();
-    
+    rh.authentication.logout()
+

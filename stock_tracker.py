@@ -15,3 +15,8 @@ def login(days):
 def logout();
     rh.authentication.logout()
 
+def get_stocks():
+    stocks = list()
+    stocks.append('JG')
+    return(stocks)
+

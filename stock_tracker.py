@@ -1,6 +1,6 @@
 import config
-import robin_stocks as rh
-import dateime as dt
+import robin_stocks as rh # get from website
+import datetime as dt
 import time
 
 def login(days):
@@ -8,11 +8,11 @@ def login(days):
     rh.authentication.login(username=config.USERNAME,
                             password=config.PASSWORD,
                             expiresIn=time_logged_in,
-                            scope+'internal',
+                            scope='internal',
                             by_sms=True,
                             store_session=True)
 
-def logout();
+def logout():
     rh.authentication.logout()
 
 def get_stocks():

@@ -30,7 +30,7 @@ def open_market():
     if time_now > market_open and time_now < market_close:
         market = True
     else:
-        print('### market is closed')
+        print('The Market is closed')
 
     return(market)
 
